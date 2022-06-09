@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    min-height:100Vh;
+   display: grid;
+   place-items: center;
+}
+.btn-modern{
+    height: 2.5rem;
+    padding: 0.5rem 1rem;
+    background-color: teal;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.4s ease-in-out, 
+                box-shadow 0.4s ease-in-out,
+                background-color 0.4s ease-in-out,
+                color 0.4s ease-in-out;
+}
+
+.btn-modern:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 0.25rem 0 #585859;
+    background-color: aqua;
+    color: black;
+}
