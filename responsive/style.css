@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-main:#0664b1;
+    --bg-barra: #7df7a1;
+    --bg-elemento:#bb3030;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    flex-grow: 1;
+    background-color: var(--bg-main);
+}
+.barra{
+    background-color: var(--bg-barra);
+    order: 1;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 0;
+}
+.elemento{
+    background-color: var(--bg-elemento);
+    padding: 0.5rem 1rem;
+}
+
+@media (min-width:640px){
+    body{
+        flex-direction: row;
+    }
+    .barra{
+        order: 0;
+        display: block;
+        padding: 0;
+        width: 20%;
+    }
+    .elemento{
+        margin-bottom: 0.25rem;
+    }
+}
