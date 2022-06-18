@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Elementos de Interés en Bootstrap</title>
+</head>
+
+<body>
+    <div class="container mb-5">
+        <section>
+            <div class="p-5 mb-4 bg-light rounded-3">
+                <div class="container-fluid py-5">
+                    <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+                    <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the
+                        one in previous versions of Bootstrap. Check out the examples below for how you can remix and
+                        restyle it to your liking.</p>
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalJumbotron"
+                        type="button">Call to Action</button>
+                </div>
+            </div>
+            <hr>
+        </section>
+        <section>
+            <form class="col-md-6 mx-md-auto" action="/">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="tel" class="form-label">Telefono</label>
+                    <input type="number" class="form-control" id="tel" placeholder="Telefono">
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                </div>
+                <input class="btn btn-primary w-100" type="submit">
+            </form>
+            <hr>
+        </section>
+        <section>
+            <div class="card mt-3 mx-auto" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Antonio Suarez Rincon</h5>
+                    <p class="card-text">
+                        Ingeniero Electronico, especialista en sistemas de telecomunicaciones. Apasionado por e
+                        desarrollo Frontend
+                    </p>
+                </div>
+                <div class="card-footer">
+                   <p class="card-text">antoniosuarezrincon@gmail.com</p> 
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <!-- modal jumbotron -->
+    <div class="modal fade" id="modalJumbotron" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal Jumbotron</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error vel reiciendis sed amet laborum
+                    earum quia fugiat minus voluptate, ipsam deserunt? Quos esse ab vero doloremque saepe voluptatibus,
+                    sunt quidem.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
